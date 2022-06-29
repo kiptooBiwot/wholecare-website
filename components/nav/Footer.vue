@@ -142,6 +142,10 @@
   </div>
 </template>
 
+//"scripts": { // "dev": "nuxt", // "build": "nuxt build", // "start": "nuxt
+start", // "generate": "nuxt generate", // "lint:js": "eslint --ext \".js,.vue\"
+--ignore-path .gitignore .", // "lint": "npm run lint:js" // },
+
 <script>
 export default {
   data: () => ({
