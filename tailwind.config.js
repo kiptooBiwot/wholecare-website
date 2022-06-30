@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       fontFamily: {
         title: ['Playfair Display', 'sans-serif'],
-        body: ['Poppins', 'sans-serif']
+        body: ['Poppins', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif']
       }
     }
   },
