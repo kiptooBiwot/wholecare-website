@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ['Playfair Display'],
-        body: ['Poppins']
+        title: ['Playfair Display', 'sans-serif'],
+        body: ['Poppins', 'sans-serif']
       }
     }
   },
