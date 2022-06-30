@@ -11,17 +11,44 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [type="file"],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full px-2 py-3 border border-gray-600 shadow-sm focus:border-[#43b0f1] focus:ring-[#43b0f1] text-sm text-gray-600;
+  }
+
+  .body {
+    @apply antialiased text-sm text-gray-500;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
-      @apply antialiased text-lg text-gray-600;
-    }
-  
-    html {
-      @apply scroll-smooth;
-    }
-  
-    body {
-      @apply overflow-x-hidden;
-    }
+    @apply overflow-x-hidden;
+  }
+}
+
+@layer components {
+
+  /* Button style */
+  .btn-primary {
+    @apply flex justify-center border border-transparent shadow-sm bg-[#e6ae17] text-white text-sm font-medium py-4 uppercase px-12 hover:bg-[#edda32] hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500;
+  }
 }

@@ -3,7 +3,7 @@
     <div class="container mx-auto md:flex space-y-5 py-10 md:space-y-0 gap-5">
       <div class="md:w-1/3">
         <div class="md:w-3/4 my-auto leading-loose space-y-4">
-          <h3 class="font-title text-xl italic font-bold text-[#edda32]">
+          <h3 class="font-semibold text-sm uppercase text-[#edda32]">
             Contacts
           </h3>
           <h1 class="text-3xl font-title">
@@ -93,7 +93,10 @@
           :key="index"
           class="m-5 md:text-center"
         >
-          <NuxtLink :to="item.url" class="">
+          <NuxtLink
+            :to="item.url"
+            class="hover:underline hover:text-[#edda32] transition duration-700 ease-in-out"
+          >
             {{ item.title }}
           </NuxtLink>
         </div>
@@ -121,8 +124,8 @@
           </div>
         </div>
         <div class="mx-auto my-auto text-center">
-          &copy; {{ new Date().getFullYear() }} &nbsp; <br>
-          Whole Care Solutions
+          Copyright &copy; {{ new Date().getFullYear() }} &nbsp; <br>
+          Whole Care Solutions - National Disability Provider Service.
           <br>
           All Rights Reserved
         </div>
@@ -141,10 +144,6 @@
     </div>
   </div>
 </template>
-
-//"scripts": { // "dev": "nuxt", // "build": "nuxt build", // "start": "nuxt
-start", // "generate": "nuxt generate", // "lint:js": "eslint --ext \".js,.vue\"
---ignore-path .gitignore .", // "lint": "npm run lint:js" // },
 
 <script>
 export default {
